@@ -1,0 +1,14 @@
+[user]
+	email = clalimarmo@gmail.com
+	name = Carlos Lalimarmo
+[github]
+	user = clalimarmo
+	token = ff1a78d291e2f4195d3eb248206c230b
+[alias]
+	ci = commit
+	co = checkout
+	br = branch
+	st = status
+	stat = status
+[core]
+	editor = vim
