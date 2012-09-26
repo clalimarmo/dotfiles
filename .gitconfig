@@ -12,3 +12,4 @@
 	stat = status
 [core]
 	editor = vim
+	excludesfile = ~/.gitignore_global
