@@ -1,3 +1,5 @@
+.rvmrc
+.powrc
 .*.swp
 .DS_Store
 .DS_Store?
