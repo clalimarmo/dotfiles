@@ -2,6 +2,8 @@ PS1='\u@\h \W $ '
 
 #alias
 alias ls='ls -aFG'
+alias be='bundle exec'
+alias bi='bundle install'
 
 #rvm
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
