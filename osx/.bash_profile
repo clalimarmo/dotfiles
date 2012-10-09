@@ -2,6 +2,7 @@ PS1='\u@\h \W $ '
 
 #alias
 alias ls='ls -aFG'
+alias less='less -r'
 alias be='bundle exec'
 alias bi='bundle install'
 
