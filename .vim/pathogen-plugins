@@ -21,10 +21,10 @@ plugins.each do |git_repo|
 end
 
 do_not_remove = Set.new(['.', '..'])
-plugin_names = plugins.collect {|p| p.split('/').last}
+do_not_remove += Set.new(plugins.collect {|p| p.split('/').last})
 Dir.entries(bundle_path).each do |f|
   plugin_dir = File.join(bundle_path, f)
-  if File.directory?(plugin_dir) && !plugin_names.include?(f) && !do_not_remove.include?(f)
+  if File.directory?(plugin_dir) && !do_not_remove.include?(f)
     puts "removing #{plugin_dir}"
     `rm -rf #{plugin_dir}`
   end
