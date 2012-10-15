@@ -1,0 +1,16 @@
+#!/usr/bin/env ruby
+bundle_path = File.join(File.dirname(__FILE__), 'bundle')
+
+plugins = [
+  'scrooloose/nerdtree',
+  'kchmck/vim-coffee-script'
+]
+
+plugins.each do |git_repo|
+  plugin_dir = File.join(bundle_path, git_repo.split('/').last)
+  if File.directory? plugin_dir
+    exec("cd #{plugin_dir} && git pull") if fork.nil?
+  else
+    exec("cd #{bundle_path} && git clone git@github.com:#{git_repo}") if fork.nil?
+  end
+end
