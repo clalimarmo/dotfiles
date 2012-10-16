@@ -1,13 +1,11 @@
 #!/usr/bin/env ruby
 
 require 'set'
+require 'yaml'
+
+plugins = YAML.load_file('pathogen-plugins.yml')
 
 bundle_path = File.join(File.dirname(__FILE__), 'bundle')
-
-plugins = [
-  'scrooloose/nerdtree',
-  'kchmck/vim-coffee-script'
-]
 
 plugins.each do |git_repo|
   plugin_dir = File.join(bundle_path, git_repo.split('/').last)
