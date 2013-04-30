@@ -14,7 +14,7 @@ plugins.each do |git_repo|
     `cd #{plugin_dir} && git pull`
   else
     puts "fetching #{git_repo}"
-    `cd #{bundle_path} && git clone git@github.com:#{git_repo}`
+    `cd #{bundle_path} && git clone https://github.com/#{git_repo}`
   end
 end
 
