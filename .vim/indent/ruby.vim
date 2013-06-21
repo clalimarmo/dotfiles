@@ -476,4 +476,4 @@ endfunction
 let &cpo = s:cpo_save
 unlet s:cpo_save
 
-set sw=2 sts=2 ts=2 sw=2 et
+set ts=2 sts=2 sw=2 et
