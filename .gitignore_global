@@ -1,5 +1,6 @@
 .rvmrc
 .ruby-gemset
+.ruby-version
 .powrc
 .*.swp
 .DS_Store
