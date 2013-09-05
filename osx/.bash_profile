@@ -14,6 +14,9 @@ alias 'gopath-here'='export GOPATH=`pwd`'
 # use brew stuff over system-provided stuff
 PATH=/usr/local/bin:/usr/local/sbin:$PATH
 
+# for node binaries
+PATH=/usr/local/share/npm/bin:$PATH
+
 # permit additional laziness
 PATH=$PATH:$HOME/bin
 
