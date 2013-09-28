@@ -1,4 +1,5 @@
 .rvmrc
+.rspec
 .ruby-gemset
 .ruby-version
 .powrc
