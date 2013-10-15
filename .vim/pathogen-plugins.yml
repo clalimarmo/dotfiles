@@ -1,6 +1,6 @@
 --- # vim plugin github repositories
 - scrooloose/nerdtree
-- kchmck/vim-coffee-script
+- clalimarmo/vim-coffee-script
 - c9s/bufexplorer
 - uggedal/go-vim
 - tpope/vim-rails
