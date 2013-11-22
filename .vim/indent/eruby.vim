@@ -80,4 +80,4 @@ function! GetErubyIndent(...)
   return ind
 endfunction
 
-" vim:set sw=2 sts=2 ts=8 noet:
+set sw=2 sts=2 ts=2 et:
