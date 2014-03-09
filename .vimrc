@@ -1,3 +1,5 @@
+set noesckeys
+
 set autoindent
 set nowrap
 
