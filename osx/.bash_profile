@@ -8,9 +8,7 @@ alias bi='bundle install'
 
 alias 'gopath-here'='export GOPATH=`pwd`'
 
-#rvm
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+eval "$(rbenv init -)"
 
 # use brew stuff over system-provided stuff
 PATH=/usr/local/bin:/usr/local/sbin:$PATH
