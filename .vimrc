@@ -6,6 +6,8 @@ set nowrap
 set incsearch
 set hlsearch
 
+set backspace=indent,eol,start
+
 call pathogen#infect()
 
 syntax on
