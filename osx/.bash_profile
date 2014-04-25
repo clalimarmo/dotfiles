@@ -20,3 +20,6 @@ PATH=/usr/local/share/npm/bin:$PATH
 PATH=$PATH:$HOME/bin
 
 GOROOT=/usr/local/Cellar/go/1.1.1
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
