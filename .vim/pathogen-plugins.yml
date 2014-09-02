@@ -1,8 +1,8 @@
 --- # vim plugin github repositories
 - scrooloose/nerdtree
+- pangloss/vim-javascript
 - kchmck/vim-coffee-script
 - c9s/bufexplorer
-- uggedal/go-vim
 - tpope/vim-rails
 - vim-ruby/vim-ruby
 - mustache/vim-mustache-handlebars
