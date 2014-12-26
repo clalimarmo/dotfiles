@@ -1,3 +1,5 @@
+set nu
+
 set noesckeys
 
 set autoindent
