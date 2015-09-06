@@ -19,7 +19,10 @@ PATH=$HOME/.node/bin:$PATH
 # permit additional laziness
 PATH=$PATH:$HOME/bin
 
-GOROOT=/usr/local/Cellar/go/1.1.1
+export GOPATH="$HOME/dev/go-workspace"
+
+# go binaries
+export PATH=$PATH:/usr/local/opt/go/libexec/bin
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
