@@ -5,6 +5,7 @@ alias ls='ls -aFG'
 alias less='less -r'
 alias be='bundle exec'
 alias bi='bundle install'
+alias dc='docker-compose'
 
 alias 'gopath-here'='export GOPATH=`pwd`'
 
@@ -30,3 +31,5 @@ export PATH="/usr/local/heroku/bin:$PATH"
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
 . $(brew --prefix)/etc/bash_completion
 fi
+
+eval "$(docker-machine env dvm)"
