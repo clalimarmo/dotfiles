@@ -39,3 +39,5 @@ source '/Users/clalimarmo/google-cloud-sdk/path.bash.inc'
 
 # The next line enables shell command completion for gcloud.
 source '/Users/clalimarmo/google-cloud-sdk/completion.bash.inc'
+
+source $HOME/git-completion.bash
