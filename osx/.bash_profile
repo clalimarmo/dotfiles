@@ -32,7 +32,7 @@ if [ -f $(brew --prefix)/etc/bash_completion ]; then
 . $(brew --prefix)/etc/bash_completion
 fi
 
-eval "$(docker-machine env dvm)"
+eval "$(docker-machine env default)"
 
 # The next line updates PATH for the Google Cloud SDK.
 source '/Users/clalimarmo/google-cloud-sdk/path.bash.inc'
