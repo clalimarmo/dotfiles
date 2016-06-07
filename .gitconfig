@@ -21,5 +21,3 @@
 	ui = true
 [push]
 	default = current
-[rerere]
-	enabled = true
