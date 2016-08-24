@@ -14,6 +14,7 @@
 	diffc = diff --color=always
 	sh = show
 	showc = show --color=always
+	pushf = push --force-with-lease
 [core]
 	editor = vim
 	excludesfile = ~/.gitignore_global
@@ -21,3 +22,5 @@
 	ui = true
 [push]
 	default = current
+[rerere]
+	enabled = true
