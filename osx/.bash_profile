@@ -28,16 +28,22 @@ export PATH=$PATH:/usr/local/opt/go/libexec/bin
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
+export PATH="/Applications/Postgres.app/Contents/Versions/9.4/bin:$PATH"
+
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
 . $(brew --prefix)/etc/bash_completion
 fi
 
 eval "$(docker-machine env default)"
 
+source $HOME/git-completion.bash
+
 # The next line updates PATH for the Google Cloud SDK.
-source '/Users/clalimarmo/google-cloud-sdk/path.bash.inc'
+if [ -f /Users/clalimarmo/y/google-cloud-sdk/path.bash.inc ]; then
+  source '/Users/clalimarmo/y/google-cloud-sdk/path.bash.inc'
+fi
 
 # The next line enables shell command completion for gcloud.
-source '/Users/clalimarmo/google-cloud-sdk/completion.bash.inc'
-
-source $HOME/git-completion.bash
+if [ -f /Users/clalimarmo/y/google-cloud-sdk/completion.bash.inc ]; then
+  source '/Users/clalimarmo/y/google-cloud-sdk/completion.bash.inc'
+fi
