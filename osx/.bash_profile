@@ -9,8 +9,6 @@ alias dcmp='docker-compose'
 
 alias 'gopath-here'='export GOPATH=`pwd`'
 
-eval "$(rbenv init -)"
-
 # use brew stuff over system-provided stuff
 PATH=/usr/local/bin:/usr/local/sbin:$PATH
 
@@ -47,3 +45,7 @@ fi
 if [ -f /Users/clalimarmo/y/google-cloud-sdk/completion.bash.inc ]; then
   source '/Users/clalimarmo/y/google-cloud-sdk/completion.bash.inc'
 fi
+
+export PATH="/usr/local/opt/qt@5.5/bin:$PATH"
+
+eval "$(rbenv init -)"
