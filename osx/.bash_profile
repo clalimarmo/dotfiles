@@ -19,6 +19,7 @@ PATH=$HOME/.node/bin:$PATH
 PATH=$PATH:$HOME/bin
 
 export GOPATH="$HOME/dev/go-workspace"
+export GOROOT=/usr/local/opt/go/libexec # homebrew
 
 # go binaries
 export PATH=$PATH:/usr/local/opt/go/libexec/bin
