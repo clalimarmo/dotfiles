@@ -33,20 +33,14 @@ if [ -f $(brew --prefix)/etc/bash_completion ]; then
 . $(brew --prefix)/etc/bash_completion
 fi
 
-eval "$(docker-machine env default)"
-
 source $HOME/git-completion.bash
-
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f /Users/clalimarmo/y/google-cloud-sdk/path.bash.inc ]; then
-  source '/Users/clalimarmo/y/google-cloud-sdk/path.bash.inc'
-fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f /Users/clalimarmo/y/google-cloud-sdk/completion.bash.inc ]; then
-  source '/Users/clalimarmo/y/google-cloud-sdk/completion.bash.inc'
-fi
 
 export PATH="/usr/local/opt/qt@5.5/bin:$PATH"
 
 eval "$(rbenv init -)"
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/clalimarmo/google-cloud-sdk/path.bash.inc' ]; then source '/Users/clalimarmo/google-cloud-sdk/path.bash.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/clalimarmo/google-cloud-sdk/completion.bash.inc' ]; then source '/Users/clalimarmo/google-cloud-sdk/completion.bash.inc'; fi
