@@ -5,7 +5,6 @@ alias ls='ls -aFG'
 alias less='less -r'
 alias be='bundle exec'
 alias bi='bundle install'
-alias dcmp='docker-compose'
 
 alias 'gopath-here'='export GOPATH=`pwd`'
 
