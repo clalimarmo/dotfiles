@@ -18,10 +18,11 @@ PATH=$HOME/.node/bin:$PATH
 PATH=$PATH:$HOME/bin
 
 export GOPATH="$HOME/dev/go-workspace"
-export GOROOT=/usr/local/opt/go/libexec # homebrew
+export GOROOT=/usr/local/opt/go@1.8/libexec # homebrew
 
 # go binaries
-export PATH=$PATH:/usr/local/opt/go/libexec/bin
+export PATH=$PATH:/usr/local/opt/go@1.8/libexec/bin
+export PATH=$PATH:/$GOPATH/bin
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
