@@ -21,6 +21,8 @@ PATH=$PATH:$HOME/bin
 export GOPATH="$HOME/dev/go-workspace"
 export GOROOT=/usr/local/opt/go/libexec # homebrew
 
+PATH=$PATH:$GOPATH/bin
+
 # go binaries
 export PATH=$PATH:/usr/local/opt/go/libexec/bin
 export PATH=$PATH:/$GOPATH/bin
