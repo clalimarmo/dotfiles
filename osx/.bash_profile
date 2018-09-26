@@ -1,5 +1,10 @@
 PS1='\u@\h \W $ '
 
+# quiet some ld errors while golang team figures out https://github.com/golang/go/issues/26073
+export CGO_LDFLAGS="-g -O2 -w"
+export WARNING_LDFLAGS=-w
+export OTHER_LDFLAGS=-w
+
 #alias
 alias ls='ls -aFG'
 alias less='less -r'
