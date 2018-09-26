@@ -20,6 +20,10 @@ PATH=/usr/local/bin:/usr/local/sbin:$PATH
 export NVM_DIR="$HOME/.nvm"
 source "/usr/local/opt/nvm/nvm.sh"
 
+# node version manager
+export NVM_DIR="$HOME/.nvm"
+source $(brew --prefix nvm)/nvm.sh
+
 # permit additional laziness
 PATH=$PATH:$HOME/bin
 
