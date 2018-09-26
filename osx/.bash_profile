@@ -55,4 +55,4 @@ if [ -f '/Users/clalimarmo/google-cloud-sdk/completion.bash.inc' ]; then source 
 
 export PGHOST="localhost"
 
-if [ -f '$HOME/.local_profile' ]; then source $HOME/.local_profile; fi
+if [ -f "$HOME/.local_profile" ]; then source $HOME/.local_profile; fi
