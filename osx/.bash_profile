@@ -27,7 +27,7 @@ source $(brew --prefix nvm)/nvm.sh
 # permit additional laziness
 PATH=$PATH:$HOME/bin
 
-export GOPATH="$HOME/dev/go-workspace"
+export GOPATH=$HOME/go
 export GOROOT=/usr/local/opt/go/libexec # homebrew
 
 PATH=$PATH:$GOPATH/bin
