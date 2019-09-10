@@ -56,3 +56,5 @@ if [ -f '/Users/clalimarmo/google-cloud-sdk/completion.bash.inc' ]; then source 
 export PGHOST="localhost"
 
 if [ -f "$HOME/.local_profile" ]; then source $HOME/.local_profile; fi
+
+ulimit -n 65536 65536
