@@ -10,6 +10,8 @@ set hlsearch
 
 set backspace=indent,eol,start
 
+let g:ftplugin_sql_omni_key = '<Plug>DisableSqlOmni'
+
 call pathogen#infect()
 
 syntax on
