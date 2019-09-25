@@ -49,3 +49,6 @@ if [ -f '/Users/clalimarmo/google-cloud-sdk/path.bash.inc' ]; then source '/User
 if [ -f '/Users/clalimarmo/google-cloud-sdk/completion.bash.inc' ]; then source '/Users/clalimarmo/google-cloud-sdk/completion.bash.inc'; fi
 
 export PGHOST="localhost"
+if [ -f $HOME/.local.env ]; then
+	source $HOME/.local.env
+fi
