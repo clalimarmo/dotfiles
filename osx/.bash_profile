@@ -1,5 +1,10 @@
 PS1='\u@\h \W $ '
 
+# quiet some ld errors while golang team figures out https://github.com/golang/go/issues/26073
+export CGO_LDFLAGS="-g -O2 -w"
+export WARNING_LDFLAGS=-w
+export OTHER_LDFLAGS=-w
+
 #alias
 alias ls='ls -aFG'
 alias less='less -r'
@@ -18,7 +23,7 @@ source "/usr/local/opt/nvm/nvm.sh"
 # permit additional laziness
 PATH=$PATH:$HOME/bin
 
-export GOPATH="$HOME/dev/go-workspace"
+export GOPATH=$HOME/go
 export GOROOT=/usr/local/opt/go/libexec # homebrew
 
 PATH=$PATH:$GOPATH/bin
@@ -49,6 +54,11 @@ if [ -f '/Users/clalimarmo/google-cloud-sdk/path.bash.inc' ]; then source '/User
 if [ -f '/Users/clalimarmo/google-cloud-sdk/completion.bash.inc' ]; then source '/Users/clalimarmo/google-cloud-sdk/completion.bash.inc'; fi
 
 export PGHOST="localhost"
+
 if [ -f $HOME/.local.env ]; then
 	source $HOME/.local.env
 fi
+
+if [ -f "$HOME/.local_profile" ]; then source $HOME/.local_profile; fi
+
+ulimit -n 65536 65536
