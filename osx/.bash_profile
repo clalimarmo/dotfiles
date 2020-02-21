@@ -60,5 +60,3 @@ if [ -f $HOME/.local.env ]; then
 fi
 
 if [ -f "$HOME/.local_profile" ]; then source $HOME/.local_profile; fi
-
-ulimit -n 65536 65536
