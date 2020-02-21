@@ -17,3 +17,11 @@ call pathogen#infect()
 syntax on
 filetype plugin on
 filetype indent on
+
+function! ManuscriptMode()
+	Goyo
+	set wrap
+	set linebreak
+endfunction
+
+command! ManuscriptMode call ManuscriptMode()
