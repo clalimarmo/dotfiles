@@ -22,6 +22,17 @@ function! ManuscriptMode()
 	Goyo
 	set wrap
 	set linebreak
+	set breakindent
+	set breakindentopt=shift:4
+	noremap <silent> k gk
+	noremap <silent> j gj
+	noremap <silent> 0 g0
+	noremap <silent> $ g$
+
+	function! WC()
+		!wc -w < %
+	endfunction
+	command! WC
 endfunction
 
 command! ManuscriptMode call ManuscriptMode()
