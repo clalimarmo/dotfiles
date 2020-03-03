@@ -32,7 +32,7 @@ function! ManuscriptMode()
 	function! WC()
 		!wc -w < %
 	endfunction
-	command! WC
+	command! WC call WC()
 endfunction
 
 command! ManuscriptMode call ManuscriptMode()
