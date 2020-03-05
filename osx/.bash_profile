@@ -2,7 +2,7 @@ PS1='\u@\h \W $ '
 
 # fix iTerm2 terminal colors when not used in tmux
 export CLICOLOR=1
-export TERM=xterm-256color
+export TERM=xterm
 
 # quiet some ld errors while golang team figures out https://github.com/golang/go/issues/26073
 export CGO_LDFLAGS="-g -O2 -w"
