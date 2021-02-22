@@ -30,9 +30,29 @@ function! ManuscriptMode()
 	noremap <silent> $ g$
 
 	function! WC()
-		!wc -w < %
+		!bin/wc < %
 	endfunction
 	command! WC call WC()
+
+	function! Preview()
+		!bin/preview < %
+	endfunction
+	command! Preview call Preview()
 endfunction
+
+function! Focus()
+	set sw=4 st=4 ts=4
+
+	function NN()
+		/\[n\].*/b+1
+	endfunction
+	command! NN call NN()
+
+	function NO()
+		/\[ \].*/b+1
+	endfunction
+	command! NO call NO()
+endfunction
+command! Focus call Focus()
 
 command! ManuscriptMode call ManuscriptMode()
