@@ -64,3 +64,4 @@ if [ -f $HOME/.local.env ]; then
 fi
 
 if [ -f "$HOME/.local_profile" ]; then source $HOME/.local_profile; fi
+eval "$(/opt/homebrew/bin/brew shellenv)"

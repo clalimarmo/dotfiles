@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
-ln -sfn `pwd` $HOME/dotfiles
-ln -sf $HOME/dotfiles/.gitconfig $HOME/.gitconfig
-ln -sf $HOME/dotfiles/.gitignore_global $HOME/.gitignore_global
-ln -sf $HOME/dotfiles/.vimrc $HOME/.vimrc
-ln -sfn $HOME/dotfiles/.vim $HOME/.vim
+here=`pwd`
+ln -sf $here/.gitconfig $HOME/.gitconfig
+ln -sf $here/.gitignore_global $HOME/.gitignore_global
+ln -sf $here/.vimrc $HOME/.vimrc
+ln -sf $here/.vim $HOME/.vim
