@@ -14,8 +14,12 @@ let g:ftplugin_sql_omni_key = '<Plug>DisableSqlOmni'
 
 call pathogen#infect()
 
+" colorscheme solarized
+" set background=dark
+
+colorscheme allomancer
 set background=dark
-colorscheme solarized
+set termguicolors
 
 syntax on
 filetype plugin on
