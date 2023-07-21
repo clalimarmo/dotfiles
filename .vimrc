@@ -17,13 +17,13 @@ call pathogen#infect()
 " to use terminal default color theme:
 " set background=light
 
+"set background=dark
+"set termguicolors
+"colorscheme solarized8_flat
+
 set background=dark
 set termguicolors
-colorscheme solarized8_flat
-
-" set background=dark
-" set termguicolors
-" colorscheme allomancer
+colorscheme allomancer
 
 syntax on
 filetype plugin on
