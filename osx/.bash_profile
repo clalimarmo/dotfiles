@@ -2,7 +2,7 @@ PS1='\u@\h \W $ '
 
 # fix iTerm2 terminal colors when not used in tmux
 export CLICOLOR=1
-export TERM=xterm
+export TERM=xterm-256color
 
 # quiet some ld errors while golang team figures out https://github.com/golang/go/issues/26073
 export CGO_LDFLAGS="-g -O2 -w"
@@ -22,13 +22,13 @@ PATH=/usr/local/bin:/usr/local/sbin:$PATH
 
 # nvm (node)
 export NVM_DIR="$HOME/.nvm"
-source "/usr/local/opt/nvm/nvm.sh"
+[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
+[ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
 
 # permit additional laziness
 PATH=$PATH:$HOME/bin
 
 export GOPATH=$HOME/go
-export GOROOT=/usr/local/opt/go/libexec # homebrew
 
 PATH=$PATH:$GOPATH/bin
 
@@ -41,6 +41,7 @@ export PATH="/usr/local/heroku/bin:$PATH"
 
 export PATH="/Applications/Postgres.app/Contents/Versions/9.4/bin:$PATH"
 
+eval "$(/opt/homebrew/bin/brew shellenv)"
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
 . $(brew --prefix)/etc/bash_completion
 fi
@@ -64,4 +65,3 @@ if [ -f $HOME/.local.env ]; then
 fi
 
 if [ -f "$HOME/.local_profile" ]; then source $HOME/.local_profile; fi
-eval "$(/opt/homebrew/bin/brew shellenv)"

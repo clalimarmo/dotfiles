@@ -24,3 +24,5 @@
 	default = current
 [rerere]
 	enabled = true
+[init]
+	defaultBranch = main
