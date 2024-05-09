@@ -30,8 +30,6 @@ PATH=$PATH:$HOME/bin
 
 export GOPATH=$HOME/go
 
-PATH=$PATH:$GOPATH/bin
-
 # go binaries
 export PATH=$PATH:/usr/local/opt/go/libexec/bin
 export PATH=$PATH:/$GOPATH/bin
